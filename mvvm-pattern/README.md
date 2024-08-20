@@ -31,10 +31,10 @@ npm run dev
 
 - Open [http://127.0.0.1:5173/](http://127.0.0.1:5173)
 
-## Running backend (api) 👨‍💻
+## Running backend (backend) 👨‍💻
 
 ```sh
-npm run start:dev
+npm run dev
 ```
 - Open [http://localhost:3000/](http://localhost:3000)
 
