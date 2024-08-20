@@ -1,12 +1,13 @@
-import { useState } from 'react'
 import Table, { IUser } from './components/table'
 import { Form } from './components'
+import useUser from './hooks/useUser'
 
 function App() {
-  const [users, setUsers] = useState<Array<IUser>>([])
+  const { users, setUsers, addNewUser } = useUser()
 
   const handleSubmit = ({ name, lastName }: IUser) => {
     setUsers([...users, { name, lastName }])
+    addNewUser({ name, lastName })
   }
 
   return (
